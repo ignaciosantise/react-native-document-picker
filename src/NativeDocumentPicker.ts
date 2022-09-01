@@ -18,7 +18,6 @@ type DocumentPickerOptions = {
   transitionStyle?: string
   presentationStyle?: string
 }
-//& Pick<ModalPropsIOS, 'presentationStyle'>
 
 export type DirectoryPickerResponse = {
   uri: string
