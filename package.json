@@ -28,7 +28,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "yarn prepare && release-it",
-    "pods": "cd example && pod-install --quiet",
+    "pods": "cd example && RCT_NEW_ARCH_ENABLED=1 pod-install --quiet",
     "bootstrap": "yarn && yarn pods",
     "start": "react-native start",
     "windows": "react-native run-windows --sln example/windows/document-picker-example.sln",
